@@ -19,7 +19,7 @@ class Game(object):
         url = f"{self.server}/question/{qnum}"
         resp = self.browser.get(url).json()
         qdata = resp.get("qdata")
-        return qdata  
+        return qdata
 
     def answer(self, qnum, answer):
         """This method accepts two arguments, a question number and the calculated answer and returns a string informing whether the supplied answer was correct or incorrect."""
@@ -27,3 +27,5 @@ class Game(object):
         ans = {'ans':str(answer).strip()}
         resp = self.browser.post(url, json=ans)
         return resp.json()["check"]
+
+game = Game('http://127.0.0.1:5000')
