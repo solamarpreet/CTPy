@@ -7,7 +7,7 @@ class Game(object):
         self.browser.headers['User-Agent']='CTPy 1.0'
         
     def question(self,qnum):
-        """This method accepts a question number and returns the question text."""
+        """This method accepts a question number and prints the question text."""
         url = f"{self.server}/question/{qnum}"
         resp = self.browser.get(url).json()
         qtxt = resp.get("qtext")
@@ -22,7 +22,7 @@ class Game(object):
         return qdata  
 
     def answer(self, qnum, answer):
-        """This method accepts two arguments, a question number and the calculated answer."""
+        """This method accepts two arguments, a question number and the calculated answer and returns a string informing whether the supplied answer was correct or incorrect."""
         url = f"{self.server}/question/{qnum}"
         ans = {'ans':str(answer).strip()}
         resp = self.browser.post(url, json=ans)
