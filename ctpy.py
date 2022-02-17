@@ -28,4 +28,3 @@ class Game(object):
         resp = self.browser.post(url, json=ans)
         return resp.json()["check"]
 
-game = Game('http://127.0.0.1:5000')
