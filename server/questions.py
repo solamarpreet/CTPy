@@ -154,3 +154,20 @@ def q9():
             return jsonify({'check':'Incorrect Answer. Please try again'})
     else:
         return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
+
+@question_bp.route('/10/', methods=['GET', 'POST'])
+def q10():
+    dict = {
+            'qnum'  :   '10',
+            'qtext' :   'The method game.data(10) returns a list where each element is the hexadecimal representation of a unicode character. Convert all the characters, join them & submit your answer as a string.',
+            'qdata' :   ['0x54', '0x68', '0x65', '0x72', '0x65', '0x73', '0x20', '0x61', '0x20', '0x50', '0x68', '0x6f', '0x65', '0x62', '0x65', '0x20', '0x6f', '0x6e', '0x20', '0x6d', '0x79', '0x20', '0x73', '0x61', '0x6e', '0x64', '0x77', '0x69', '0x63', '0x68', '0x21'],
+            'qans'  :   'Theres a Phoebe on my sandwich!'
+            }
+    if request.method == 'POST':
+        ans = request.get_json()['ans']
+        if ans == dict['qans']:
+            return jsonify({'check':'Correct Answer'})
+        else:
+            return jsonify({'check':'Incorrect Answer. Please try again'})
+    else:
+        return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
