@@ -121,3 +121,19 @@ def q7():
     else:
         return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
 
+@question_bp.route('/8/', methods=['GET', 'POST'])
+def q8():
+    dict = {
+            'qnum'  :   '8',
+            'qtext' :   'Increment each element in the list returned by game.data(8) method by 15',
+            'qdata' :   [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 958, 743, 527],
+            'qans'  :   '[401, 477, 62, 433, 922, 359, 251, 390, 838, 581, 612, 993, 343, 630, 968, 360, 414, 177, 773, 234, 933, 252, 427, 581, 841, 263, 881, 965, 641, 964, 702, 232, 830, 82, 119, 73, 527, 39, 907, 909, 782, 568, 96, 394, 858, 846, 460, 757, 732, 973, 758, 542]'
+            }
+    if request.method == 'POST':
+        ans = request.get_json()['ans']
+        if ans == dict['qans']:
+            return jsonify({'check':'Correct Answer'})
+        else:
+            return jsonify({'check':'Incorrect Answer. Please try again'})
+    else:
+        return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
