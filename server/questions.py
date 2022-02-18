@@ -137,3 +137,20 @@ def q8():
             return jsonify({'check':'Incorrect Answer. Please try again'})
     else:
         return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
+
+@question_bp.route('/9/', methods=['GET', 'POST'])
+def q9():
+    dict = {
+            'qnum'  :   '9',
+            'qtext' :   'The method game.data(9) returns a nested list that further contains 2 lists. Add each element of the first inner list with each element at the same index in the second inner list and return the answer as a new list',
+            'qdata' :   [[456, 39, 532, 126, 245, 57, 27], [91, 234, 43, 438, 317, 619, 30]],
+            'qans'  :   '[547, 273, 575, 564, 562, 676, 57]'
+            }
+    if request.method == 'POST':
+        ans = request.get_json()['ans']
+        if ans == dict['qans']:
+            return jsonify({'check':'Correct Answer'})
+        else:
+            return jsonify({'check':'Incorrect Answer. Please try again'})
+    else:
+        return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
