@@ -200,3 +200,5 @@ Blog & Portfolio : [https://solamarpreet.github.io](https://solamarpreet.github.
 [issues-url]: https://github.com/solamarpreet/CTPy/issues
 [license-shield]: https://img.shields.io/github/license/solamarpreet/CTPy.svg?style=for-the-badge
 [license-url]: https://github.com/solamarpreet/CTPy/blob/main/LICENSE
+[last-commit-shield]: https://img.shields.io/github/last-commit/solamarpreet/CTPy?style=for-the-badge
+[last-commit-url]: https://github.com/solamarpreet/CTPy/pulse
