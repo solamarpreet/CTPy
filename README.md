@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/solamarpreet/CTPy">
-    <img src="images/logo.png" alt="Logo" width="100" height="60">
+    <img src="images/logo.png" alt="Logo" width="125" height="75">
   </a>
 
 <h3 align="center">Capture The Python</h3>
@@ -30,7 +30,7 @@
     <br />
   </p>
 </div>
-
+<br />
 
 
 <!-- TABLE OF CONTENTS -->
@@ -52,8 +52,7 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-
+<br />
 
 
 <!-- GETTING STARTED -->
@@ -77,20 +76,29 @@ For absolute beginners or those who don't wish to install the game server locall
    ```py
    game.question(1)
    ```
+<br />
 
-### Usage
+## Usage
 
-In order to play you need to make use of the **game** object that has already been initialized for you. This **game** object has 3 methods available which you need to use.
+In order to play you need to make use of the '**game**' object that has already been initialized for you. This '**game**' object has 3 methods available which you need to use:
+<br />
 
-1. **game.question()** : This method pulls the question text from the server and displays it on the console. It accepts one parameter i.e Question Number
+### game.question()
+This method pulls the question text from the server and displays it on the console. It accepts one parameter i.e Question Number
    ```py
    game.question(1)
    ```
-2. **game.data()** : This method fetches the data associated with the Question. It accepts one parameter i.e Question Number
+<br />
+
+### game.data()
+This method fetches the data associated with the Question. It accepts one parameter i.e Question Number
    ```py
    game.data(1)
    ```
-3. **game.answer()** : This method submits your answer to the server and returns a string telling you if your answer was correct or incorrect. It accepts 2 parameters i.e The Question Number you are submitting the answer for and the answer itself.
+<br />
+
+### game.answer()
+This method submits your answer to the server and returns a string telling you if your answer was correct or incorrect. It accepts 2 parameters i.e The Question Number you are submitting the answer for and the answer itself.
    ```py
    game.answer(1, 'This is the answer')
    ```
@@ -100,8 +108,8 @@ In order to play you need to make use of the **game** object that has already be
    ```
    where x is a variable containing the answer.
 
+<br />
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- HOSTING YOUR OWN SERVER -->
 ## Hosting your own server
@@ -113,6 +121,7 @@ The following external dependancies need to be pre-installed in order to host yo
   ```sh
   pip install flask
   ```
+<br />
 
 ### Installation
 
@@ -138,9 +147,8 @@ The following external dependancies need to be pre-installed in order to host yo
    from ctpy import *
    game.question(1)
    ```
-
+<br />
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 
@@ -152,40 +160,39 @@ The following external dependancies need to be pre-installed in order to host yo
 
 See the [open issues](https://github.com/solamarpreet/CTPy/issues) for a full list of proposed features (and known issues).
 
-
+<br />
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
 Please contribute additional quality questions/challenges so that Python beginners can continue to benefit from this project. If you have a question that you wish to add, please fork the repo, add your code and create a pull request. You can also simply open an issue with the tag "question".
 
-
-
+<br />
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
-
+<br />
 
 <!-- CONTACT -->
 ## Contact
 
 Amarpreet Singh - solamarpreet@protonmail.com
 
-Portfolio & Blog: [https://solamarpreet.github.io](https://solamarpreet.github.io)
+Blog & Portfolio : [https://solamarpreet.github.io](https://solamarpreet.github.io)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+<br />
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Python Discord](https://www.pythondiscord.com)
 * [Flaticon](https://www.flaticon.com)
+* [othneildrew](https://github.com/othneildrew/Best-README-Template)
 
+<br />
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -202,6 +209,3 @@ Portfolio & Blog: [https://solamarpreet.github.io](https://solamarpreet.github.i
 [issues-url]: https://github.com/solamarpreet/CTPy/issues
 [license-shield]: https://img.shields.io/github/license/solamarpreet/CTPy.svg?style=for-the-badge
 [license-url]: https://github.com/solamarpreet/CTPy/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
