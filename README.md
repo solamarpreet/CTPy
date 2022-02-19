@@ -143,16 +143,6 @@ The following external dependancies need to be pre-installed in order to host yo
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -162,8 +152,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/solamarpreet/CTPy/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -171,7 +159,6 @@ See the [open issues](https://github.com/solamarpreet/CTPy/issues) for a full li
 
 Please contribute additional quality questions/challenges so that Python beginners can continue to benefit from this project. If you have a question that you wish to add, please fork the repo, add your code and create a pull request. You can also simply open an issue with the tag "question".
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -180,16 +167,14 @@ Please contribute additional quality questions/challenges so that Python beginne
 
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Amarpreet Singh - [@solamarpreet](https://twitter.com/solamarpreet) - solamarpreet@protonmail.com
+Amarpreet Singh - solamarpreet@protonmail.com
 
-Profile Link: [https://github.com/solamarpreet](https://github.com/solamarpreet)
+Portfolio & Blog: [https://solamarpreet.github.io](https://solamarpreet.github.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -207,15 +192,15 @@ Profile Link: [https://github.com/solamarpreet](https://github.com/solamarpreet)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/solamarpreet/CTPy.svg?style=for-the-badge
 [contributors-url]: https://github.com/solamarpreet/CTPy/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/solamarpreet/CTPy.svg?style=for-the-badge
 [forks-url]: https://github.com/solamarpreet/CTPy/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/solamarpreet/CTPy.svg?style=for-the-badge
 [stars-url]: https://github.com/solamarpreet/CTPy/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/solamarpreet/CTPy.svg?style=for-the-badge
 [issues-url]: https://github.com/solamarpreet/CTPy/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/solamarpreet/CTPy.svg?style=for-the-badge
 [license-url]: https://github.com/solamarpreet/CTPy/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
