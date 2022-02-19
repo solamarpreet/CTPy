@@ -13,6 +13,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPLv3 License][license-shield]][license-url]
+[![Last Commit][last-commit-shield]][last-commit-url]
 
 
 
@@ -25,10 +26,10 @@
 
 <h3 align="center">Capture The Python</h3>
 
-  <p align="center"><i>
-    CTPy is a series of Capture the Flag styled challenges for Python learners
+  <p align="center">
+    <i>CTPy is a series of Capture the Flag styled challenges for Python learners</i>
     <br />
-  </i></p>
+  </p>
 </div>
 <br />
 
