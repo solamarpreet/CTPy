@@ -25,10 +25,10 @@
 
 <h3 align="center">Capture The Python</h3>
 
-  <p align="center">
+  <p align="center"><i>
     CTPy is a series of Capture the Flag styled challenges for Python learners
     <br />
-  </p>
+  </i></p>
 </div>
 <br />
 
@@ -154,7 +154,9 @@ If that does not help address your issue check the [open issues](https://github.
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Please contribute additional quality questions/challenges so that Python beginners can continue to benefit from this project. If you have a question that you wish to add, please fork the repo, add your code and create a pull request. You can also simply open an issue with the tag "question".
+Please contribute additional quality questions/challenges so that Python beginners can continue to benefit from this project.
+
+If you have a question that you wish to add, simply open an issue with the tag "question". You can also fork the repo, add your code and create a pull request.
 
 <br />
 
