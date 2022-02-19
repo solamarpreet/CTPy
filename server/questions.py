@@ -171,3 +171,20 @@ def q10():
             return jsonify({'check':'Incorrect Answer. Please try again'})
     else:
         return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
+
+@question_bp.route('/11/', methods=['GET', 'POST'])
+def q11():
+    dict = {
+            'qnum'  :   '11',
+            'qtext' :   'The method game.data(11) returns a base64 encoded string. Decode and return this string',
+            'qdata' :   'RmFpdGggaW4geW91ciBuZXcgYXBwcmVudGljZSwgbWlzcGxhY2VkIG1heSBiZS4gQXMgaXMgeW91ciBmYWl0aCBpbiB0aGUgZGFyayBzaWRlIG9mIHRoZSBmb3JjZS4gQXQgYW4gZW5kIHlvdXIgcnVsZSBpcy4gQW5kIHNob3J0IGVub3VnaCBpdCB3YXMh',
+            'qans'  :   'Faith in your new apprentice, misplaced may be. As is your faith in the dark side of the force. At an end your rule is. And short enough it was!'
+            }
+    if request.method == 'POST':
+        ans = request.get_json()['ans']
+        if ans == dict['qans']:
+            return jsonify({'check':'Correct Answer'})
+        else:
+            return jsonify({'check':'Incorrect Answer. Please try again'})
+    else:
+        return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
