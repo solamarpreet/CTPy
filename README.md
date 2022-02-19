@@ -45,6 +45,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -58,25 +59,39 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-For absolute beginners or those who don't wish to install the game server locally, I have hosted the game server on my own vps. To get started simply
+### Prerequisites
+
+The following external dependencies need to be pre-installed in order to host your own server.
+* flask
+  ```sh
+  pip install flask
+  ```
+<br />
+
+### Installation
 
 1. Clone the repo and cd into the folder
    ```sh
    git clone https://github.com/solamarpreet/CTPy.git && cd CTPy
    ```
-2. Start the Python shell
+2. Start the game server
+   ```sh
+   python3 server/ctpy-server.py
+   ```
+3. Open a new terminal and start the Python shell
    ```sh
    python3
    ```
-3. Import the ctpy.py file into the Python shell
+4. Import the ctpy.py file into the Python shell
    ```py
    from ctpy import *
    ```
-4. Fetch Question 1 and start playing :)
+5. Fetch Question 1 and start playing :)
    ```py
    game.question(1)
    ```
 <br />
+
 
 ## Usage
 
@@ -111,46 +126,21 @@ This method submits your answer to the server and returns a string telling you i
 <br />
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- HOSTING YOUR OWN SERVER -->
-## Hosting your own server
 
-### Prerequisites
+<!-- TROUBLESHOOTING -->
+## Troubleshooting
 
-The following external dependancies need to be pre-installed in order to host your own server.
-* flask
-  ```sh
-  pip install flask
-  ```
+If you get an error stating **'[Errno 111] Connection refused'** then it is possible that Flask started the HTTP server on a non default port.
+
+In that case check the terminal output you get after you run the Step 2 of the <a href="#installation">Installation</a> process. Take a note of the port number and make the change in the last line of ctpy.py file as follows
+```nano
+# game = Game('http://127.0.0.1:5000')
+game = Game('http://127.0.0.1:<your-port-number-here>')
+```
+
+If that does not help address your issue check the [open issues](https://github.com/solamarpreet/CTPy/issues) for a list known issues and open a new issue.
+
 <br />
-
-### Installation
-
-1. Clone the repo and cd into the folder
-   ```sh
-   git clone https://github.com/solamarpreet/CTPy.git && cd CTPy
-   ```
-2. Start the game server
-   ```sh
-   python3 server/ctpy-server.py
-   ```
-3. Open a new terminal and edit the ctpy.py file in the text editor of your choice
-   ```sh
-   nano ctpy.py
-   ```
-4. Comment the last line as follows and create a new line with the url of your own server that flask provides you in Step 2
-   ```nano
-   # game = Game('http://ctpy.exoton.org')
-   game = Game('http://127.0.0.1')
-   ```
-5. Save the ctpy file, start the Python shell and import the ctpy.py file as a module and start playing
-   ```py
-   from ctpy import *
-   game.question(1)
-   ```
-<br />
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -158,7 +148,6 @@ The following external dependancies need to be pre-installed in order to host yo
 - [ ] Dynamic question data to ensure solutions are obtained in a programatic fashion
 - [ ] Segregated beginner, intermediate and advanced challenge paths
 
-See the [open issues](https://github.com/solamarpreet/CTPy/issues) for a full list of proposed features (and known issues).
 
 <br />
 

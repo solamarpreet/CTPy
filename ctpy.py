@@ -40,3 +40,4 @@ class Game(object):
         else:
             return resp.json()["check"]
 
+game = Game('http://127.0.0.1:5000')
