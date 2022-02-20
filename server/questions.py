@@ -223,3 +223,20 @@ def q13():
     else:
         return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
 
+@question_bp.route('/14/', methods=['GET', 'POST'])
+def q14():
+    dict = {
+            'qnum'  :   '14',
+            'qtext' :   'The method game.data(14) returns a list of words. Submit a list containing all the words that start and end with the same character as the answer.',
+            'qdata' :   ['apple', 'arcwarden', 'anna', 'bristleback', 'baseball', 'blanket', 'bounty', 'civic', 'cape', 'beastmaster', 'demon', 'dazzle', 'doom', 'enigma', 'ember', 'elephant', 'fan', 'grimstroke', 'gasket', 'huskar', 'honor', 'invoker', 'igloo', 'kayak', 'laser', 'level', 'lycan', 'matron', 'magnus', 'morphling', 'madam', 'mom', 'navy', 'noon', 'opera', 'oracle', 'pudge', 'postal', 'quest', 'racecar', 'radar', 'razor', 'raspberry', 'rotator', 'slardar', 'spectre', 'stats', 'tinker', 'underlord', 'viper', 'visage', 'weaver', 'zeus'],
+            'qans'  :   "['anna', 'civic', 'kayak', 'level', 'madam', 'mom', 'noon', 'racecar', 'radar', 'razor', 'rotator', 'stats']"
+            }
+    if request.method == 'POST':
+        ans = request.get_json()['ans']
+        if ans == dict['qans']:
+            return jsonify({'check':'Correct Answer'})
+        else:
+            return jsonify({'check':'Incorrect Answer. Please try again'})
+    else:
+        return jsonify({'qnum': dict['qnum'], 'qtext': dict['qtext'], 'qdata': dict['qdata']})
+
