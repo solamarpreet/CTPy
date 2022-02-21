@@ -123,10 +123,10 @@ This method submits your answer to the server and returns a string telling you i
    game.answer(1, x)
    # where x is a variable containing the answer
    ```
-      or
+   or
    ```py
    game.answer(1, myfunc())
-   # where myfunc is a function that calculates the result
+   # where myfunc is a function that calculates the answer
    ```
 
 <br />
