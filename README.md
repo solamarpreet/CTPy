@@ -121,8 +121,13 @@ This method submits your answer to the server and returns a string telling you i
    or
    ```py
    game.answer(1, x)
+   # where x is a variable containing the answer
    ```
-   where x is a variable containing the answer.
+   or
+   ```py
+   game.answer(1, myfunc())
+   # where myfunc is a function that calculates the answer
+   ```
 
 <br />
 <p align="right">(<a href="#top">back to top</a>)</p>
