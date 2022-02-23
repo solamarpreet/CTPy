@@ -1,6 +1,6 @@
 import requests
 
-class Game(object):
+class Game():
     def __init__(self,url):
         self.server = url
         self.browser = requests.session()
