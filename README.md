@@ -62,7 +62,8 @@
 
 ### Prerequisites
 
-The following external dependencies need to be pre-installed in order to host your own server.
+The following external dependencies need to be pre-installed in order to host your own CTPy game server.
+* Python 3.6 +
 * flask
   ```sh
   pip install flask
